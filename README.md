@@ -57,18 +57,52 @@ LeagueForge goes further by handling:
 
 ---
 
-## High-Level Architecture
+## Project Structure
 
 ```
-LeagueForge/
-├── core/                # Core scheduling logic & constraints
-├── models/              # Entities: Team, Match, Venue, League
-├── services/            # Business logic (fixture generation, standings)
-├── repository/          # Data access layer
-├── utils/               # Helper functions (date handling, validations)
-├── main.py              # Entry point
-└── config/              # Configuration & constants
+CRICINFO/
+├── __pycache__/
+├── .vscode/
+├── alembic/
+│   ├── versions/
+│   ├── env.py
+│   ├── README
+│   └── script.py.mako
+├── src/
+│   ├── core/
+│   ├── database/
+│   ├── dependencies/
+│   ├── exceptions/
+│   ├── logs/
+│   ├── model/
+│   ├── repository/
+│   ├── router/
+│   ├── schema/
+│   ├── service/
+│   └── utils/
+├── .env
+├── .gitignore
+├── alembic.ini
+├── main.py
+├── poetry.lock
+├── pyproject.toml
+└── random.txt
 ```
+
+LeagueForge-Tournament-Management-System/
+├── src/
+│   ├── models/          # ORM/data models (Team, Match, Venue, etc.)
+│   ├── services/        # Core business logic (scheduling, standings)
+|   ├── router/          # API endpoints (FastAPI routes)
+|   ├── schema/          # Pydantic schemas (request/response validation)
+|   ├── repositories/    # DB interaction layer
+|   ├── db/              # DB session, connection setup
+│   ├── utils/           # Helper utilities (date handling, validations)
+│   └── core/            # Core configuration / constants
+├── main.py              # Entry point
+├── requirements.txt     # Dependencies
+└── README.md
+
 
 ---
 
