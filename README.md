@@ -1,4 +1,4 @@
-# LeagueForge — League Tournament Management System
+# LeagueForge : League Tournament Management System
 
 **LeagueForge** is a robust, system-driven tournament management platform inspired by real-world league formats such as franchise-based competitions.
 It is designed to automate the **entire lifecycle of a league tournament**  from team onboarding and fixture generation to match scheduling, scoring, and standings all while enforcing strict business rules that reflect real-world constraints.
