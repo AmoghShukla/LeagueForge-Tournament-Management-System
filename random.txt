@@ -1,0 +1,19 @@
+Build a comprehensive League Tournament Management System inspired by the Indian Premier League that handles scheduling, operations, scoring, and analytics for a full season. The system must manage teams, venues, matches, and users with distinct roles while enforcing strict business rules. 
+Each team must play every other team twice, and matches should be scheduled such that no team plays without a minimum gap of two days.
+Venues have availability constraints, and matches must be dynamically scheduled without conflicts. 
+The system should also support real-time score updates. Special scenarios like match rescheduling, cancellations, and tie-breakers must be handled. The focus is on building a robust, scalable system with strong validations, clear separation of responsibilities, and complex domain logic.
+
+Expectations and functional requirements:
+
+The system should manage teams, venues, and tournament seasons with proper validations and relationships.
+A scheduler (admin) should generate fixtures ensuring round-robin (double matches), rest-gap constraints, and no venue conflicts.
+Support dynamic rescheduling due to venue unavailability, weather conditions, or manual overrides.
+Each match should move through states such as scheduled, live, completed, and cancelled with strict transition rules.
+A venue manager should control venue availability, blackout dates, and capacity constraints.
+A score updater should update ball-by-ball or aggregated scores and finalize results.
+Viewers should access schedules, live scores, standings(points table or ranking), and historical data in read-only mode.
+Track audit logs for all critical actions such as scheduling, updates, and cancellations.
+Ensure proper validation, error handling, and consistency across concurrent operations.
+
+
+

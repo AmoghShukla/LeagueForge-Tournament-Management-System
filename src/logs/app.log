@@ -1,0 +1,4 @@
+ 2026-04-17 17:36:58,704 | INFO | src.repository.user | Creating user with payload: <src.model.user.User_Class object at 0x000001FCA120D510> 
+ 2026-04-17 17:36:58,721 | INFO | src.repository.user | User created successfully: <src.model.user.User_Class object at 0x000001FCA120D510> 
+ 2026-04-17 17:49:07,001 | INFO | src.repository.user | Creating user with payload: <src.model.user.User_Class object at 0x000002E668AA4790> 
+ 2026-04-17 17:49:07,022 | INFO | src.repository.user | User created successfully: <src.model.user.User_Class object at 0x000002E668AA4790> 
